@@ -1,1 +1,1 @@
-# wendyslab repositorio dedidaco para pruebas de backend en wendyslab
+# wendyslab repositorio dedicado para pruebas de backend en wendyslab
