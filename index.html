@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="shortcut icon" href="img/wlogo.svg" type="image/x-icon">
   <title>WENDY LAB</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="./css/main.css" />
@@ -27,7 +28,7 @@
           <a href="#" class="nav-menu-link"> Jobs offers </a>
         </li>
         <li class="nav-menu-item">
-          <a href="#" class="nav-menu-link"> News </a>
+          <a href="#" class="nav-menu-link"> Grants </a>
         </li>
       </ul>
 
@@ -55,7 +56,6 @@
           </div>
         </div>
       </div>
-
       <div class="parallax__group info-container" style="background-color: #fff;">
         <img src="img/ezgif.com-gif-maker.gif" alt="imagen" />
         <div class="text-container">
@@ -75,10 +75,12 @@
               <img src="./img/2.jpg" alt="">
               <div class=" card-content">
                 <h3>Wendy Gonzalez</h3>
-                <h5>Director</h5>
+                <small><h5>Director</h5></small>
                 <br><br><br>
                 <p>Director of Center of bioinformatics and molecular simulation at Universidad de Talca</p>
+                <h1><a href="https://www.linkedin.com/in/dra-wendy-gonzalez-1b124ab/"><ion-icon name="logo-linkedin"></ion-icon></a></h1>
               </div>
+
             </div>
           
 
@@ -87,7 +89,7 @@
             <div class="card-imgx ">
               <img src="./img/luciano.jpg" alt="">
               <div class=" card-content">
-                <h3>Wendy Lab</h3>
+                <h3>Luciano Peña</h3>
                 <br><br><br>
                 <p>Formato para presentar a los miembros del laboratorio con fotografia e informacion de cada uno de ellos
                 </p>
@@ -102,9 +104,10 @@
 
             </div>
             <div class=" card-content">
-              <h3>Wendy's Lab</h3>
+              <h3>Marcelo Ibañez</h3>
               <br><br><br>
               <p>Formato para presentar a los miembros del laboratorio con fotografia e informacion de cada uno de ellos
+             <i class="icon ion-logo-github"></i></h1>
               </p>
             </div>
 
@@ -117,43 +120,47 @@
             <div class=" footer-col ">
               <h4>Pincipal Institutions</h4>
               <ul>
-                <li> <a href="https://www.utalca.cl/"> <img src="./img/logos/u-logo.svg" alt=""></a> </li>
-                <li> <a href="https://cbsm.utalca.cl/"><img src="./img/logos/cbsmLogoNew@0.5x.png" alt=""> </a> </li>
                 <li> <a href="https://minicad.cl/"><img src="./img/logos/logo_692076b4e0aba41f52f3995871a6b08d_1x.png" alt=""> </a> </li>
+                <li> <a href="https://cbsm.utalca.cl/"><img src="./img/logos/cbsmLogoNew@0.5x.png" alt=""> </a> </li>
+                <li> <a href="https://www.utalca.cl/"> <img src="./img/logos/u-logo.svg" alt=""></a> </li>
                 
               </ul>
             </div>
-            <div class=" footer-col">
-              <h4></h4>
-              <ul>
-                <li> <a href="#"> </a> </li>
-                <li> <a href="#"> </a> </li>
-                <li> <a href="#"> </a> </li>
-                <li> <a href="#"> </a> </li>
-                <li> <a href="#"> </a> </li>
-                <li> <a href="#"> </a> </li>
-              </ul>
-            </div>
+           
             <div class=" footer-col ">
-              <h4>Contact</h4>
-              <ul>
-                <li> <a href="#"> Name <input type="text" > </a> </li>
-                <li> <a href="#"> E-mail <input type="email"></a> </li>
-                <li> <a href="#"> Grade <input type="text"></a> </li>
-                <li> <a href="#"> <input type="button" name="Send" id="Send" value="Send"></a> </li>
-                <li> <a href="#"> </a> </li>
-                <li> <a href="#"> </a> </li>
-              </ul>
-            </div>
+              <div class="container">
+                <form action="action_page.php">
+              
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div>
         
           </div>
+        <!--
+          <div class="footer-button">
+            <li> <a href="https://minicad.cl/"><img src="./img/logos/logo_692076b4e0aba41f52f3995871a6b08d_1x.png" alt=""> </a> </li>
+            <li> <a href="https://www.utalca.cl/"> <img src="./img/logos/u-logo.svg" alt=""></a> </li>
+            <li> <a href="https://cbsm.utalca.cl/"><img src="./img/logos/cbsmLogoNew@0.5x.png" alt=""> </a> </li>
+          </div>
         </div>
+      -->
       </footer>
-
+      
     </div>
   </main>
 
-
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
