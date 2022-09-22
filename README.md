@@ -1,9 +1,9 @@
-# Pure CSS Multilayer Parallax
-- Process Video: https://www.youtube.com/watch?v=wAiC310hg3Q
-- Based on the [tutorial](https://keithclark.co.uk/articles/pure-css-parallax-websites/) by Keith Clark
+# REPOSITORIO PAGINA WENDY LAB
+
+DOM: www.wendylab.cl
+
 
 ### Socials
 
-- GitHub: https://github.com/KiaanCastillo
-- YouTube: https://www.youtube.com/c/KiaanCastillo
-- Instagram: https://www.instagram.com/craftedbykiaan/
+- GitHub: https://github.com/Sumatron
+- Instagram: https://www.instagram.com/seyka3d
