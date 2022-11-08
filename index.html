@@ -8,34 +8,36 @@
   <title>WENDY LAB</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="tingle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
 
   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
 </head>
-
-<body>
+<body onload="myFunction()" >
+  <div id="loader"></div>
+  
   <header class="header">
-    <nav class="navbar">
-      <img src="img/wlogo.svg" alt="" class="img-logo">
-      <a href="#" class="logo"> WENDY LAB </a>
-      <ul class="nav-menu">
-        <li class="nav-menu-item">
-          <a href="#" class="nav-menu-link"> Publications </a>
-        </li>
-        <li class="nav-menu-item">
-          <a href="#" class="nav-menu-link"> News </a>
-        </li>
-        <li class="nav-menu-item">
-          <a href="#" class="nav-menu-link"> Jobs offers </a>
-        </li>
-        <li class="nav-menu-item">
-          <a href="#" class="nav-menu-link"> Grants </a>
-        </li>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars" style="background-color: black ;"></i>
+      </label>
+      <img class="navbar" src="/img/wlogo.svg" width="55">
+      <label class="logo">WENDY LAB</label>
+      
+      <ul>
+      
+        <li><a href="/publication.html">Publication</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="/jobsoffer.html">Jobs Offers</a></li>
+        <li><a href="#">Grants</a></li>
       </ul>
-
     </nav>
+    <section></section>
   </header>
-  <main>
-    <div class="wrapper">
+  <main >
+    <div class="wrapper animate-bottom"" id="myDiv">
       <div class="parallax__group hero-container">
         <div class="parallax__layer sky"></div>
         <div class="parallax__layer bushes"></div>
@@ -68,111 +70,127 @@
 
         </div>
       </div>
+      <!--carousell cards-->
       <div class="slideshow-container">
 
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
-            <div class="card-body info-container">
-                <div class="card-container" style="background-color:#81deea ;">
-                  <div class="card-box">
-                    <div class="card-imgx ">
-                      <img src="./img/2.jpg" alt="">
-                      <div class=" card-content">
-                        <h3>Wendy Gonzalez</h3>
-                        <h5>Director</h5>
-                        <br><br><br>
-                        <p>Director of Center of bioinformatics and molecular simulation at Universidad de Talca</p>
-                        <h1><a href="https://www.linkedin.com/in/dra-wendy-gonzalez-1b124ab/"><ion-icon name="logo-linkedin"></ion-icon></a></h1>
-                      </div>
-        
-                    </div>
-                  
-        
+          <div class="card-body info-container">
+            <div class="card-container" style="background-color:#81deea ;">
+              <div class="card-box">
+                <div class="card-imgx ">
+                  <img src="./img/Doctorado Juvi/wgonzalez.jpg" alt="">
+                  <div class=" card-content">
+                    <h3>Wendy Gonzalez Díaz</h3>
+                    <h5>Director CBSM</h5>
+                    <br><br><br>
+                    <p>Director of Center of bioinformatics and molecular simulation at Universidad de Talca</p>
+                    <h1 ><a href="https://www.linkedin.com/in/dra-wendy-gonzalez-1b124ab/">
+                        <ion-icon name="logo-linkedin" ></ion-icon>
+                      </a></h1>
                   </div>
-                  <div class="card-box">
-                    <div class="card-imgx ">
-                      <img src="./img/luciano.jpg" alt="">
-                      <div class=" card-content">
-                        <h3>Wendy Lab</h3>
-                        <br><br><br>
-                        <p>Formato para presentar a los miembros del laboratorio con fotografia e informacion de cada uno de ellos
-                        </p>
-                      </div>
-                    </div>
-                 
-        
-                  </div>
-                  <div class="card-box">
-                    <div class="card-imgx ">
-                      <img src="./img/fleto.jpg" alt="">
-        
-                    </div>
-                    <div class=" card-content">
-                      <h3>Wendy's Lab</h3>
-                      <br><br><br>
-                      <p>Formato para presentar a los miembros del laboratorio con fotografia e informacion de cada uno de ellos
-                     <i class="icon ion-logo-github"></i></h1>
-                      </p>
-                    </div>
-        
+
+                </div>
+
+
+              </div>
+              <div class="card-box">
+                <div class="card-imgx ">
+                  <img src="./img/luciano.jpg" alt="">
+                  <div class=" card-content">
+                    <h3>Luciano Peña </h3>
+                    <h5>Undergraduate Student UTALCA</h5>
+                    <br><br><br>
+                    <p>Molecular modeling of ion channels and their interaction with drug and peptides
+                    </p>
                   </div>
                 </div>
+
+
               </div>
+              <div class="card-box">
+                <div class="card-imgx ">
+                  <img src="./img/Doctorado Juvi/mibañes2.jpg" alt="">
+
+                </div>
+                <div class=" card-content">
+                  <h3>Marcelo Ibañez</h3>
+                  <h5>Undergraduate Student UTALCA</h5>
+                  <br><br><br>
+                  <p>Formato para presentar a los miembros del laboratorio con fotografia e informacion de cada uno de
+                    ellos
+                    <i class="icon ion-logo-github"></i></h1>
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="card-body info-container">
+            <div class="card-container" style="background-color:#81deea ;">
+              <div class="card-box">
+                <div class="card-imgx ">
+                  <img src="./img/Doctorado Juvi/jbaeza.jpg" alt="">
+                  <div class=" card-content">
+                    <h3>Javiera Baeza</h3>
+                    <h5>Phd Student UTALCA</h5>
+                    
+                    <br><br><br>
+                    <p>Molecular modeling of ion channels and their interaction with drug and peptides</p>
+                    <h1><a href="https://www.linkedin.com/in/dra-wendy-gonzalez-1b124ab/">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a></h1>
+                  </div>
+
+                </div>
+
+
+              </div>
+              <div class="card-box">
+                <div class="card-imgx ">
+                  <img src="./img/Doctorado Juvi/ediaz2.jpg" alt="">
+                  <div class=" card-content">
+                    <h3>Erbio Días Pico</h3>
+                    <h5>PhD Student (UTALCA)</h5>
+                    <br><br><br>
+                    <p>Molecular modeling of ion channels and their interaction with drug and peptides</p>
+                    <h1><a href="https://www.linkedin.com/in/dra-wendy-gonzalez-1b124ab/">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a></h1>
+                  </div>
+
+                </div>
+
+
+              </div>
+              <div class="card-box">
+                <div class="card-imgx ">
+                  <img src="./img/Doctorado Juvi/smarquez.jpg" alt="">
+
+                </div>
+                <div class=" card-content">
+                  <h3>Estanislao Marquéz</h3>
+                  <h5>Undergraduate Student UTALCA</h5>
+                  <br><br><br>
+                  <p>Polypharmacology               
+                  </p>
+                </div>
+
+              </div>
+             
+            </div>
+          </div>
         </div>
       
-        <div class="mySlides fade">
-            <div class="card-body info-container">
-                <div class="card-container" style="background-color:#81deea ;">
-                  <div class="card-box">
-                    <div class="card-imgx ">
-                      <img src="./img/2.jpg" alt="">
-                      <div class=" card-content">
-                        <h3>Wendy Gonzalez</h3>
-                        <h5>Director</h5>
-                        <br><br><br>
-                        <p>Director of Center of bioinformatics and molecular simulation at Universidad de Talca</p>
-                        <h1><a href="https://www.linkedin.com/in/dra-wendy-gonzalez-1b124ab/"><ion-icon name="logo-linkedin"></ion-icon></a></h1>
-                      </div>
-        
-                    </div>
-                  
-        
-                  </div>
-                  <div class="card-box">
-                    <div class="card-imgx ">
-                      <img src="./img/javiera.jpg" alt="">
-                      <div class=" card-content">
-                        <h3>Wendy Lab</h3>
-                        <br><br><br>
-                        <p>Formato para presentar a los miembros del laboratorio con fotografia e informacion de cada uno de ellos
-                        </p>
-                      </div>
-                    </div>
-                 
-        
-                  </div>
-                  <div class="card-box">
-                    <div class="card-imgx ">
-                      <img src="./img/javiera.jpg" alt="">
-        
-                    </div>
-                    <div class=" card-content">
-                      <h3>Wendy's Lab</h3>
-                      <br><br><br>
-                      <p>Formato para presentar a los miembros del laboratorio con fotografia e informacion de cada uno de ellos
-                     <i class="icon ion-logo-github"></i></h1>
-                      </p>
-                    </div>
-        
-                  </div>
-                </div>
-              </div>
-        </div>
-    
+
         <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
+      <!--footer-->
       <footer class="footer">
         <div class=" footer-container ">
           <div class=" row ">
@@ -180,32 +198,33 @@
               <h4>Pincipal Institutions</h4>
               <ul>
                 <li> <a href="https://cbsm.utalca.cl/"><img src="./img/logos/cbsmLogoNew@0.5x.png" alt=""> </a> </li>
-                <li> <a href="https://minicad.cl/"><img src="./img/logos/logo_692076b4e0aba41f52f3995871a6b08d_1x.png" alt=""> </a> </li>
+                <li> <a href="https://minicad.cl/"><img src="./img/logos/logo_692076b4e0aba41f52f3995871a6b08d_1x.png"
+                      alt=""> </a> </li>
                 <li> <a href="https://www.utalca.cl/"> <img src="./img/logos/u-logo.svg" alt=""></a> </li>
-                
+
               </ul>
             </div>
-            
+
             <div class=" footer-col ">
               <div class="container">
                 <form action="action_page.php">
-                  
+
                   <label for="fname">First Name</label>
                   <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                  
+
                   <label for="lname">Last Name</label>
                   <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                  
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                
-                <input type="submit" value="Submit">
-                
-              </form>
+
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                  <input type="submit" value="Submit">
+
+                </form>
+              </div>
+
             </div>
-            
-          </div>
-      <!--
+            <!--
         <div class="footer-button">
           <li> <a href="https://minicad.cl/"><img src="./img/logos/logo_692076b4e0aba41f52f3995871a6b08d_1x.png" alt=""> </a> </li>
           <li> <a href="https://www.utalca.cl/"> <img src="./img/logos/u-logo.svg" alt=""></a> </li>
@@ -213,15 +232,19 @@
         </div>
       </div>
     -->
-  </footer>
-</div>
+      </footer>
+      
+    </div>
 
 
-</main>
+  </main>
 
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script src="scrips.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="scrips.js"></script>
+  <script src="tingle.min.js"></script>
+  
+
 </body>
 
 </html>

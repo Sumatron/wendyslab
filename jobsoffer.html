@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="shortcut icon" href="img/wlogo.svg" type="image/x-icon">
+  <title>WENDY LAB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="tingle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+</head>
+<body onload="myFunction()" >
+  <div id="loader"></div>
+  
+  <header class="header">
+
+
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars" style="background-color: black;"></i>
+      </label>
+      <label class="logo">WENDY LAB</label>
+      <ul>
+        <li><a class="active" href="/index.html">Home</a></li>
+        <li><a href="/publication.html">Publication</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Jobs Offers</a></li>
+        <li><a href="#">Grants</a></li>
+      </ul>
+    </nav>
+    <section></section>
+
+
+  </header>
+  <br>
+  <br>
+  <br>
+  <br>
+  <main >
+    <div class="form-container" id="myDiv">
+      
+        <form action="jobs.php" method="post">
+            <h2>Register Form</h2>
+            <div class="input-container">
+              <i class="fa fa-user icon"></i>
+              <input class="input-field" type="text" placeholder="Username" name="usrnm">
+            </div>
+          
+            <div class="input-container">
+              <i class="fa fa-envelope icon"></i>
+              <input class="input-field" type="email" placeholder="Email" name="email">
+            </div>
+            <div class="input-container">
+                <i class="fa fa-globe icon"></i>
+                <input class="input-field" type="text" placeholder="Conuntry" name="country">
+              </div>
+              <div class="input-container">
+                <i class="fa fa-phone icon"></i>
+                <input class="input-field" type="number" placeholder="Phone" name="email">
+              </div>
+
+            <button type="submit" class="btn">Register</button>
+          </form>
+      </div>
+
+
+  </main>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="scrips.js"></script>
+  <script src="tingle.min.js"></script>
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+    var i;
+    var len = acc.length;
+    for (i = 0; i < len; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+    </script>
+  
+
+</body>
+
+</html>
