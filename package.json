@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "animate.css": "^4.1.1",
+    "glider-js": "^1.7.8",
     "tingle.js": "^0.16.0"
   }
 }
